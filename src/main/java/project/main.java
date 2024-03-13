@@ -19,7 +19,7 @@ public class main {
         double miles = scan.nextDouble();
 
         double deliveryFee;
-        
+
         if(miles<= 4 && miles >= 0) {
             deliveryFee = 2.0;
         } else if (miles <= 15 && miles >= 5) {
@@ -34,7 +34,8 @@ public class main {
 
         System.out.println("You purchased " + product);
         double totalCost = (amount * answer) + deliveryFee;
-        System.out.println("Total cost: $" + totalCost);
+        System.out.println("Your Total cost is: $" + String.format("%.2f", totalCost));
+        System.out.println("Thank you come again!!!");
 
         scan.close();
 
